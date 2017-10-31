@@ -119,9 +119,9 @@ add_action( 'widgets_init', 'yvision_widgets_init' );
 function yvision_scripts() {
 	wp_enqueue_style( 'yvision-style', get_template_directory_uri() . '/assets/css/style.css' );
 
-	e_script( 'appjs', get_template_directory_uri() . '/assets/js/app.js', array(), '20151215', true );
+	wp_enqueue_script( 'appjs', get_template_directory_uri() . '/assets/js/app.js', array(), '20151215', true );
 
-	e_script( 'vendorjs', get_template_directory_uri() . '/assets/js/vendor.js', array(), '20151215', false );
+	wp_enqueue_script( 'vendorjs', get_template_directory_uri() . '/assets/js/vendor.js', array(), '20151215', false );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
