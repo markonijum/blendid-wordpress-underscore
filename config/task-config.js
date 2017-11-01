@@ -1,5 +1,5 @@
 var path = require('path');
-var themeFolderName = "" //Type folder name of your theme here!
+var themeFolderName = "yvision" //Type folder name of your theme here!
 
 module.exports = {
   html        : false,
@@ -47,7 +47,7 @@ module.exports = {
 
   browserSync: {
     //Set localhost server e.g "mysite.dev"
-    proxy: "",
+    proxy: "yvision.dev",
     files: ["./**/*.php"]
   },
 
